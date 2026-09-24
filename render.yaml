@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: aidevfinal-demo
+    runtime: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: DEMO_ACCESS_PASSWORD
+        sync: false

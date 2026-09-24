@@ -1,0 +1,11 @@
+node_modules/
+dashboard/node_modules/
+dashboard/dist/
+.env
+.env.*
+!.env.example
+.railway/
+.npm-cache/
+sandboxes/
+*.log
+
